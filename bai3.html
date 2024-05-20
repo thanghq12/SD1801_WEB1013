@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            font-variant: small-caps; /* định dạng font chữ*/
+            text-decoration: none; /* tắt thuộc tính gạch chân */
+        }
+        a:link { /* 1 */
+            color: blue;
+        }
+        a:active { /*2.trạng thái kích hoạt */
+            color: orangered;
+        }
+        a:visited { /* 3.trạng thái đã viếng thăm */
+            color: green; 
+        }
+        a:hover { /* 4.trạng thái đưa chuột lên */
+            color: red;
+            text-decoration: underline;
+        }
+        h1 {
+            color: pink!important; 
+            /* khi có important thì sẽ được ưu tiên lên hàng đầu */
+        }
+        .h11 {
+            color: blue;
+        }
+        #truong {
+            color: green;
+        }
+        .h12 {
+            color: red;
+        }
+       
+       
+    
+        /* 
+        Thứ tự ưu tiên 
+       inline -> id -> class -> h1 -> mặc định   */
+    </style>
+</head>
+<body>
+    <a href="#1"> Home Page </a>
+    <a href="#2">About us </a>
+    <a href="#3">Contact us </a>
+    <a href="#4">Feedback </a>
+    <a href="#5">My Account </a>
+    <h1 class="h11 h12" id="truong" style="color: brown;">PTCD FPT Polytechnic</h1>
+</body>
+</html>
