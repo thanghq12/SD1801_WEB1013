@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1,.d2,.d3,.d4 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .d1,.d2 {
+            float: left; /* tk nào muốn dàn thì để float left */
+        }
+        .d4,.d3 {
+            clear: both; /* tk nào hông muốn bị chạy theo cái dải đó thì để clear both */
+        }
+        body {
+            padding: 0;
+            margin: 0; /* reset margin và padding */
+        }
+        header {
+            height: 150px; 
+            background: red;
+        }
+        nav {
+            background: yellow;
+            line-height: 25px;
+        }
+        article {
+            min-height: 200px;width: 75%;background: blue;
+            float: left;
+        }
+        aside {
+           min-height: 200px;width: 25%;background: pink;
+            float: left;
+        }
+        footer {
+            height: 40px;background:gray ;
+            clear: both;
+        }
+        ul.vmenu {
+            margin: 0px;
+            padding: 0px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+            list-style: none;
+        }
+        ul.vmenu>li>a { /* chọn tất cả thẻ a ở trong menu */
+            display: block; /* biến thẻ a thành thẻ div khối hiển thị dưới dạng khối  */
+            line-height: 30px;
+            border-bottom: 1px dotted orangered;
+            text-decoration: none; /* bỏ gạch chân */
+            font-variant: small-caps;
+            color: orangered;
+            padding-left: 25px;
+        }
+        ul.vmenu>li>a:hover { /* di chuột lên */
+            font-weight: bolder;
+            color: red;
+        }
+        .hmenu {
+            margin: 0px;
+            padding: 0px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px orangered;
+            list-style: none;
+            background-color: orangered;
+            height: 40px;
+        }
+        ul.hmenu>li>a {
+            display: block;
+            line-height:  40px;
+            text-decoration: none;
+            font-variant: small-caps;
+            padding-left: 25px;
+            color: white;
+        }
+        ul.hmenu>li {
+            float: left;
+            margin: 0 5px;
+        }
+        ul.hmenu>li>a:hover {
+            color: yellow;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div> -->
+    <div class="wrapper">
+        <header>HEADER HIHI</header>
+        <nav>
+            <ul class="hmenu">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Góp ý</a></li>
+                <li><a href="">Hỏi đáp</a></li>
+            </ul>
+        </nav>
+        <div>
+            <article>
+              
+              
+            </article>
+            <aside>
+                <ul class="vmenu">
+                    <li><a href="">Hàng bán chạy</a></li>
+                    <li><a href="">Hàng yêu thích</a></li>
+                    <li><a href="">Hàng mới</a></li>
+                    <li><a href="">Hàng đặc biệt</a></li>
+                    <li><a href="">Hàng giảm giá</a></li>
+                </ul>
+            </aside>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
